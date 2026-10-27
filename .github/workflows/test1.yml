@@ -9,11 +9,8 @@ jobs:
         - name: Use Checkout Action
           uses: actions/checkout@v7.0.1
 
-        - name: Welcome Message
-          run: echo "My name is Parag"
-
-        - name: List Files
-          run: ls
-
-        - name: Read File
-          run: cat README.md
+        - name: Multi Line Commands
+          run: |
+            echo "My name is Parag"
+            ls
+            cat README.md
