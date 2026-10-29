@@ -9,7 +9,9 @@ jobs:
         - name: Use Checkout Action
           uses: actions/checkout@v7.0.1
 
-        - name: Use Shell Script
-          run: ./test_script.sh
+        - name: Use Shell Script & Granting Permissions to our Shell Script
+          run: |
+            chmod +x ./test_script.sh
+            ./test_script.sh
 
-          
+
