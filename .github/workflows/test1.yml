@@ -9,8 +9,7 @@ jobs:
         - name: Use Checkout Action
           uses: actions/checkout@v7.0.1
 
-        - name: Multi Line Commands
-          run: |
-            echo "My name is Parag"
-            ls
-            cat README.md
+        - name: Use Shell Script
+          run: ./test_script.sh
+
+          
